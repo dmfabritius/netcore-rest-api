@@ -1,0 +1,53 @@
+GET https://localhost:5001/api/v1/todos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzYjEyMmM5LTNjMjktNDVlNy05ZDJhLWQxZGJiNzIyNGIyZiIsImVtYWlsIjoieEB4LmNvbSIsInN1YiI6InhAeC5jb20iLCJqdGkiOiJmNWU0NmEyNi1iOTFhLTQ0ZGYtYmM5Yy00NWI2ZDEyZWExNGIiLCJuYmYiOjE2MTc0ODc2MTYsImV4cCI6MTYxNzUwOTIxNiwiaWF0IjoxNjE3NDg3NjE2fQ.DlTj3WAv64xCH5bjzbnw6-FIm_ccWCR6fFALbWx9Ug0
+
+###
+GET https://localhost:5001/api/v1/todos/2
+Content-Type: application/json
+
+###
+POST https://localhost:5001/api/v1/todos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzYjEyMmM5LTNjMjktNDVlNy05ZDJhLWQxZGJiNzIyNGIyZiIsImVtYWlsIjoieEB4LmNvbSIsInN1YiI6InhAeC5jb20iLCJqdGkiOiJmNWU0NmEyNi1iOTFhLTQ0ZGYtYmM5Yy00NWI2ZDEyZWExNGIiLCJuYmYiOjE2MTc0ODc2MTYsImV4cCI6MTYxNzUwOTIxNiwiaWF0IjoxNjE3NDg3NjE2fQ.DlTj3WAv64xCH5bjzbnw6-FIm_ccWCR6fFALbWx9Ug0
+
+{
+    "title": "Item 2 Title",
+    "description": "Item 2 Desciption",
+    "done":false
+}
+
+###
+PUT https://localhost:5001/api/v1/todos/2
+Content-Type: application/json
+
+{
+    "itemID": 2,
+    "title": "Item 2 Title",
+    "description": "Item 2 Desciption",
+    "done":false
+}
+
+###
+DELETE https://localhost:5001/api/v1/todos/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIzYjEyMmM5LTNjMjktNDVlNy05ZDJhLWQxZGJiNzIyNGIyZiIsImVtYWlsIjoieEB4LmNvbSIsInN1YiI6InhAeC5jb20iLCJqdGkiOiJmNWU0NmEyNi1iOTFhLTQ0ZGYtYmM5Yy00NWI2ZDEyZWExNGIiLCJuYmYiOjE2MTc0ODc2MTYsImV4cCI6MTYxNzUwOTIxNiwiaWF0IjoxNjE3NDg3NjE2fQ.DlTj3WAv64xCH5bjzbnw6-FIm_ccWCR6fFALbWx9Ug0
+
+###
+
+POST https://localhost:5001/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "email": "x@x.com",
+    "password": "pass"
+}
+
+###
+
+POST https://localhost:5001/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "x@x.com",
+    "password": "pass"
+}
